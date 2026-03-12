@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "name": "Auto Push to GitHub",
   "description": "Automatically commit and push changes to GitHub when files are saved",
   "version": "1",

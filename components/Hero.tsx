@@ -11,7 +11,7 @@ export default function Hero() {
           <div>
             <div className="inline-block mb-6 px-4 py-2 bg-slate-800 rounded-full text-sm text-secondary">
               <Zap className="inline mr-2" size={16} />
-              AI-Powered QA Automation
+              AI-Powered QA Automation asddasdasasddas
             </div>
             
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
