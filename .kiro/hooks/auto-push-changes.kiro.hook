@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "name": "Auto Push to GitHub",
+  "description": "Automatically commit and push changes to GitHub when files are saved",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.tsx",
+      "**/*.ts",
+      "**/*.css",
+      "**/*.json"
+    ]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "git add . && git commit -m \"Update: Auto-commit dari Kiro - $(date +%Y-%m-%d\\ %H:%M:%S)\" && git push origin main",
+    "timeout": 30
+  }
+}

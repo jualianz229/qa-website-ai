@@ -19,7 +19,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-xl text-slate-300 mb-8 leading-relaxed">
-              Otomatisasi Quality Assurance dengan AI. Generate test cases, deteksi bugs, dan jalankan regression testing secara otomatis. Hemat waktu dan biaya QA hingga 80%.
+              Otomatisasi Quality Assurance dengan AI OpenAi & Google. Generate test cases, deteksi bugs, dan jalankan regression testing secara otomatis. Hemat waktu dan biaya QA hingga 80%.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
