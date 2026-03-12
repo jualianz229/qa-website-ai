@@ -10,7 +10,8 @@ import {
   Settings,
   LogOut,
   Menu,
-  X
+  X,
+  Camera
 } from 'lucide-react'
 import { useState } from 'react'
 
@@ -18,6 +19,7 @@ const menuItems = [
   { icon: LayoutDashboard, label: 'Dashboard', href: '/dashboard' },
   { icon: Upload, label: 'Upload Requirements', href: '/dashboard/upload' },
   { icon: Zap, label: 'Generate Tests', href: '/dashboard/generate' },
+  { icon: Camera, label: 'Visual Testing', href: '/dashboard/visual-testing' },
   { icon: Bug, label: 'Bug Detection', href: '/dashboard/bugs' },
   { icon: BarChart3, label: 'Test Coverage', href: '/dashboard/coverage' },
   { icon: Settings, label: 'Settings', href: '/dashboard/settings' },
