@@ -14,43 +14,43 @@ import {
 const features = [
   {
     icon: Brain,
-    title: 'AI Test Case Generator',
-    description: 'Upload user stories, PRD, atau requirements. AI secara otomatis generate functional test cases, edge cases, negative cases, dan boundary tests.',
+    title: 'AI Test Generator',
+    description: 'Generate functional, edge, dan negative test cases otomatis dari requirements.',
   },
   {
     icon: Workflow,
-    title: 'Automated Regression Testing',
-    description: 'AI mendeteksi code changes dan secara otomatis menjalankan regression test suites untuk memastikan tidak ada bug baru.',
+    title: 'Regression Testing',
+    description: 'Deteksi code changes dan jalankan regression tests secara otomatis.',
   },
   {
     icon: Bug,
-    title: 'AI Bug Detection',
-    description: 'Analisis application behavior dan logs untuk mendeteksi potential bugs sebelum masuk ke production.',
+    title: 'Bug Detection',
+    description: 'Analisis behavior dan logs untuk deteksi bugs sebelum production.',
   },
   {
     icon: BarChart3,
-    title: 'Smart Test Coverage Analyzer',
-    description: 'AI menganalisis bagian aplikasi mana yang kurang testing coverage dan memberikan rekomendasi.',
+    title: 'Coverage Analyzer',
+    description: 'Analisis coverage dan rekomendasi testing untuk bagian yang kurang.',
   },
   {
     icon: Code,
     title: 'Test Script Generator',
-    description: 'Generate automated test scripts untuk Playwright, Selenium, dan Cypress secara otomatis.',
+    description: 'Generate test scripts untuk Playwright, Selenium, Cypress otomatis.',
   },
   {
     icon: GitBranch,
-    title: 'API Testing Automation',
-    description: 'AI secara otomatis generate API tests dari OpenAPI / Swagger specifications.',
+    title: 'API Testing',
+    description: 'Generate API tests dari OpenAPI / Swagger specifications.',
   },
   {
     icon: Zap,
-    title: 'Continuous QA Monitoring',
-    description: 'Integrasi dengan CI/CD pipelines untuk monitoring QA secara real-time.',
+    title: 'CI/CD Monitoring',
+    description: 'Integrasi dengan CI/CD untuk monitoring QA real-time.',
   },
   {
     icon: MessageSquare,
-    title: 'AI QA Chat Assistant',
-    description: 'Tanya AI: "generate test cases untuk login feature" atau "create regression tests untuk checkout flow".',
+    title: 'QA Chat Assistant',
+    description: 'Tanya AI untuk generate test cases atau regression tests.',
   },
 ]
 
@@ -58,27 +58,27 @@ export default function Features() {
   return (
     <section id="features" className="section-padding bg-dark">
       <div className="container-max">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Fitur AI QA <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Terlengkap</span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
-            Semua tools yang Anda butuhkan untuk mengotomatisasi QA dan meningkatkan kualitas software.
+          <p className="text-base text-slate-400 max-w-2xl mx-auto">
+            Semua tools untuk mengotomatisasi QA dan tingkatkan kualitas software.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
               <div
                 key={index}
-                className="bg-slate-900 border border-slate-700 rounded-xl p-6 hover:border-primary transition-colors group"
+                className="bg-slate-900 border border-slate-700 rounded-lg p-5 hover:border-primary transition-colors duration-200 group"
               >
-                <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <Icon size={24} className="text-white" />
+                <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center mb-3 group-hover:scale-105 transition-transform duration-200">
+                  <Icon size={20} className="text-white" />
                 </div>
-                <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+                <h3 className="text-base font-bold mb-2">{feature.title}</h3>
                 <p className="text-slate-400 text-sm leading-relaxed">{feature.description}</p>
               </div>
             )
