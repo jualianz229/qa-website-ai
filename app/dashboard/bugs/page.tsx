@@ -1,6 +1,6 @@
 'use client'
 
-import { AlertCircle, CheckCircle, Clock } from 'lucide-react'
+import { AlertCircle } from 'lucide-react'
 
 const bugs = [
   {
