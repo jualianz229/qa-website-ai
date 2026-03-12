@@ -19,7 +19,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-              Otomatisasi QA dengan AI. Generate test cases, deteksi bugs, dan jalankan testing secara otomatis. Hemat waktu hingga 80%.
+              Otomatisasi QA dengan AI OpenAi Google Antigravity. Generate test cases, deteksi bugs, dan jalankan testing secara otomatis. Hemat waktu hingga 80%.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mb-8">
