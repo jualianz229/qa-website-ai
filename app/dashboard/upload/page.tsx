@@ -13,9 +13,18 @@ export default function UploadPage() {
         <p className="text-slate-400">Upload user stories, PRD, atau requirements untuk di-analyze oleh AI</p>
       </div>
 
-      <div className="bg-slate-900 border-2 border-dashed border-slate-700 rounded-lg p-12 text-center mb-6"
-        onDragOver={() => setIsDragging(true)}
+      <div className={`bg-slate-900 border-2 border-dashed rounded-lg p-12 text-center mb-6 transition-colors ${
+        isDragging ? 'border-primary bg-slate-800' : 'border-slate-700'
+      }`}
+        onDragOver={(e) => {
+          e.preventDefault()
+          setIsDragging(true)
+        }}
         onDragLeave={() => setIsDragging(false)}
+        onDrop={(e) => {
+          e.preventDefault()
+          setIsDragging(false)
+        }}
       >
         <Upload size={48} className="mx-auto mb-4 text-slate-400" />
         <h3 className="text-xl font-bold mb-2">Drag and drop files here</h3>
