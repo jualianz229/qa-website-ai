@@ -34,7 +34,7 @@ export default function Hero() {
             <div className="flex gap-8 text-sm text-slate-400">
               <div>
                 <div className="font-bold text-white">10,000+</div>
-                <div>Test Cases Generateddddd</div>
+                <div>Test Cases Generat</div>
               </div>
               <div>
                 <div className="font-bold text-white">500+</div>
